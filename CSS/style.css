@@ -1,0 +1,464 @@
+
+* {
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+ 
+html{ /*etiqueta raiz para estabilizar tamaño*/
+    font-size: 62.5%; /*Con esto ahora 10px=1rem*/
+    font-family: 'Calibri','Times New Roman', Times, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul, ol, li, a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+}
+
+ul a, ol a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.redes-personales a, .discord-comunidad a{
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    text-align: start;
+}
+
+.normalizar{ /*transforma el tamaño a uno perfectamente legible*/
+    font-size: 2rem; /*=16px*/
+    text-align: justify;
+}
+
+.body-color{/*cambia el color del fondo*/
+    background-color: rgb(241, 196, 111);
+}
+
+.subRayar{
+    text-decoration:underline;
+}
+
+/*====Inicio Modificadores para el header====*/
+.header-color{
+    background-color: rgb(92, 57, 11);
+    color: black;
+}
+/* inicio de clases para navegador */
+nav{
+    min-height: 50px;
+    max-height: 100%;
+    max-width: 100%; 
+}
+
+nav a{
+    color: black;
+    font-size: 1.6rem;
+}
+
+/* .nav-aux{
+    font-family: 'Calibri','Times New Roman', Times, sans-serif;
+    color: black;
+}
+.nav-aux ul li{
+    transition: 0.5s;
+}
+
+.nav-aux ul li:hover{
+    background-color: white;
+}
+
+.nav-aux div ul li ul{
+    background-color:rgb(92, 57, 11);
+    font-size: 2rem;
+}
+
+.nav-aux a{
+    color: black;
+}
+
+.nav-aux button{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-aux button span{
+    width: 30px;
+    height: 40px;
+} */
+
+header div div div span{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,
+    rgb(175, 175, 175),transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+header div:hover span{
+    left: 100%;
+}
+
+
+/* fin de clases para navegador */
+
+.centrar{
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img{
+    width:50px;
+    height:50px;
+    transition: 0.5s;
+}
+
+.logo-img:hover{
+    width:60px;
+    height:60px;
+}
+
+.logo-nombre{
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.logo-nombre:hover{
+    font-size: 2.5rem;
+}
+
+/*====Fin Modificadores para el header====*/
+
+/*====Inicio Modificadores para el Main====*/
+main{
+    color: black;
+}
+
+.padingbody{
+    padding: 10px;
+}
+
+/* .padingbody a{
+    color: black;
+}
+
+.informacionGeneral{
+    color: black;
+} */
+
+.conteiner{/*imagen de fondo para inicios del main*/
+    background-image: url(../assets/img/fondo_DnD2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.conteiner p{
+    padding: 10px;
+}
+
+.hero{
+    display: flex;
+    padding: 10px;
+    background: linear-gradient(rgba(126, 85, 32, 0.973), rgb(241, 196, 111));
+    /* background-color: rgba(126, 85, 32, 0.185); */
+    justify-content: center;
+    align-items:center;
+    text-align: justify;
+    gap: 2%;
+}
+
+.hero-titular{
+    height: 50%;
+    width: 50%;
+}
+
+.hero h1{
+    text-align: start;
+    color: black;
+}
+
+.dados-img{
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transition: 2s;
+}
+
+.dados-img:hover{
+    transform: rotate(360deg);
+}
+
+/* ======extras para el main====== */
+.colorClaroLetra{ 
+    color: beige;
+}
+
+.colorIntermedio{ /*class para cambiar el color del fondo*/
+    background-color: rgb(177, 137, 63);
+    padding: 15px;
+}
+
+.cuestionario{
+    display: flex;
+    padding: 10px;
+    flex-flow:column;
+    gap: 10px;
+    justify-content:start;
+    align-items:flex-start;
+}
+
+button{
+    background-color:burlywood;
+    height: 40px;
+    width: 70px;
+}
+
+.titular{
+    font-size: 3rem;
+    transition: 0.5s;
+}
+
+.titular:hover{
+    font-size: 3.5rem;
+}
+
+/* ==para la galeria provicional== */
+.galeria-clases{
+    padding: 20px;
+    background-color: tan;
+    text-align: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "caja1 caja2 caja9 caja12"
+    "caja6 caja5 caja8 caja7"
+    "caja3 caja10 caja11 caja4";
+
+    padding: 10px;
+    gap: 10px;
+}
+
+.box-item{
+    display: flex;
+    padding: 15px;
+    background-color: rgba(165, 42, 42, 0.226);
+    box-shadow: 5px 5px 5px rgb(144, 134, 112);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+    font-size: 2rem;
+}
+
+.box-item img{
+    width: 100%;
+}
+
+.c1{
+    grid-area: caja1;
+}
+
+.c2{
+    grid-area: caja2;
+}
+
+.c3{
+    grid-area: caja3;
+}
+
+.c4{
+    grid-area: caja4;
+}
+
+.c5{
+    grid-area: caja5;
+}
+
+.c6{
+    grid-area: caja6;
+}
+
+.c7{
+    grid-area: caja7;
+}
+
+.c8{
+    grid-area: caja8;
+}
+
+.c9{
+    grid-area: caja9;
+}
+
+.c10{
+    grid-area: caja10;
+}
+
+.c11{
+    grid-area: caja11;
+}
+
+.c11 img{
+    height: 100%;
+}
+
+.c12{
+    grid-area: caja12;
+}
+
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12{
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ==fin para galeria== */
+.redes-personales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.discord-comunidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.logo-dimension{
+    height: 60px;
+    width: 60px;
+    transition: 1.5s;
+}
+
+.logo-dimension:hover{
+    transform: rotate(360deg);
+}
+
+/* ============ */
+.informacionRazas{
+    width: 100%;
+    background-color: rgb(177, 137, 63);
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.informacionRazas-card{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.informacionRazas-card:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+
+.informacionRazas-card img{
+    width: 200px;
+    height: 400px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+/*====Fin Modificadores para el Main====*/
+
+/*====Inicio Modificadores para el footer====*/
+footer{ /*cambia el color del fondo*/
+    padding: 10px;
+    background-color: rgb(126, 85, 32);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+/*====Fin Modificadores para el footer====*/
+
+@media (max-width: 610px) {
+    .box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    
+        grid-template-areas: 
+        "caja1 caja2"
+        "caja3 caja4"
+        "caja5 caja6" 
+        "caja7 caja8"
+        "caja9 caja10" 
+        "caja11 caja12";
+    }
+
+    .informacionRazas-card{
+        flex-direction: column;
+
+    }
+
+    .informacionRazas-card:nth-child(odd){
+        flex-direction: column;
+    }
+
+    .informacionRazas-card img{
+        width: 50%;
+        height: 75%;
+        object-fit:contain;
+    }
+
+    .dados-img{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 480px){
+    .hero{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .dados-img{
+        height: 250px;
+        width: 250px;
+    }
+}
