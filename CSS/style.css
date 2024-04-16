@@ -402,6 +402,7 @@ button{
 /*====Fin Modificadores para el Main====*/
 
 /*====Inicio Modificadores para el footer====*/
+/* proximamente sera mas bonito lo juro :D*/
 footer{ /*cambia el color del fondo*/
     padding: 10px;
     background-color: rgb(126, 85, 32);
@@ -415,7 +416,17 @@ footer a{
 }
 /*====Fin Modificadores para el footer====*/
 
-@media (max-width: 610px) {
+@media (max-width: 992px) {
+    .hero{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-titular{
+        height: 100%;
+        width: 100%;
+    }
+
     .box{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -445,20 +456,45 @@ footer a{
         object-fit:contain;
     }
 
-    .dados-img{
-        display: none;
-    }
+
     
 }
 
-@media (max-width: 480px){
+@media (max-width: 576px){
     .hero{
         flex-direction: column;
-        padding: 0px;
+        padding: 20px;
+    }
+
+    .hero-titular{
+        height: 100%;
+        width: 100%;
     }
 
     .dados-img{
         height: 250px;
         width: 250px;
+    }
+
+    /* .dados-img{
+        display: none;
+    } */
+
+    .box{
+        display: grid;
+        grid-template-columns:none ;
+        grid-template-areas: 
+        "caja1"
+        "caja2"
+        "caja3" 
+        "caja4"
+        "caja5" 
+        "caja6" 
+        "caja7" 
+        "caja8"
+        "caja9" 
+        "caja10" 
+        "caja11" 
+        "caja12";
     }
 }
