@@ -225,6 +225,15 @@ main{
     padding: 15px;
 }
 
+.selector{
+    transition: 0.5s;
+}
+
+.selector:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
 .cuestionario{
     display: flex;
     padding: 10px;
@@ -458,6 +467,10 @@ footer a{
         width: 50%;
         height: 75%;
         object-fit:contain;
+    }
+
+    header div div div span{
+        display: none;
     }
 
 

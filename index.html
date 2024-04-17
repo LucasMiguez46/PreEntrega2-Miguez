@@ -1,245 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!--===========================================================-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InfoRolArg</title>
-    <!-- aca aparece el nombre de arriba de la pagina -->
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="shortcut icon" href="assets/img/favicon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <!--===========================================================-->
-  <body class="normalizar body-color">
-    <!-- escribir entre body el texto de la pagina -->
-    <!--encabezado-->
-    <header id="top">
-      <!-- data-bs-theme="dark" -->
-      <nav class="navbar header-color navbar-expand-md position-relative z-3">
-        <div class="container-fluid">
-          <a href="index.html" class="logo">
-            <img src="assets/img/favicon.png" alt="favicon" class="logo-img" />
+<!--===========================================================-->
 
-            <h2 class="logo-nombre">InfoRolArg</h2>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoRolArg</title>
+  <!-- aca aparece el nombre de arriba de la pagina -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+<!--===========================================================-->
 
+<body class="normalizar body-color">
+  <!-- escribir entre body el texto de la pagina -->
+  <!--encabezado-->
+  <header id="top">
+    <!-- data-bs-theme="dark" -->
+    <nav class="navbar header-color navbar-expand-md position-relative z-3">
+      <div class="container-fluid">
+        <a href="index.html" class="logo">
+          <img src="assets/img/favicon.png" alt="favicon" class="logo-img" />
+
+          <h2 class="logo-nombre">InfoRolArg</h2>
+        </a>
+
+        <div>
           <div>
-            <div>
-              <span></span>
-            </div>
+            <span></span>
           </div>
+        </div>
 
-          <div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header header-color">
-                <a href="index.html" class="logo">
-                  <img
-                    src="assets/img/favicon.png"
-                    alt="favicon"
-                    class="logo-img"
-                  />
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header header-color">
+              <a href="index.html" class="logo">
+                <img src="assets/img/favicon.png" alt="favicon" class="logo-img" />
+                <h2 class="logo-nombre">InfoRolArg</h2>
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
 
-                  <h2 class="logo-nombre">InfoRolArg</h2>
-                </a>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
+            <div class="offcanvas-body header-color">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item selector">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
 
-              <div class="offcanvas-body header-color">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="index.html"
-                      >Home</a
-                    >
-                  </li>
+                <li class="nav-item dropdown selector">
+                  <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DND5e
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="pages/dnd5e.html">General</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages/dnd5e-razas.html">Razas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages/dnd5e-clases.html">Clases</a>
+                    </li>
+                  </ul>
+                </li>
 
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      DND5e
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="pages/dnd5e.html"
-                          >General</a
-                        >
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="pages/dnd5e-razas.html"
-                          >Razas</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="pages/dnd5e-clases.html"
-                          >Clases</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
+                <li class="selector">
+                  <a href="pages/bibliografia.html" class="nav-link">Bibliografia</a>
+                </li>
 
-                  <li>
-                    <a href="pages/bibliografia.html" class="nav-link"
-                      >Bibliografia</a
-                    >
-                  </li>
-
-                  <li>
-                    <a href="pages/contacto.html" class="nav-link">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                <li class="selector">
+                  <a href="pages/contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- ======================================================= -->
-
-    <!--Main-->
-    <main>
-      <div class="hero">
-        <!--seccion inicial del home-->
-        <section class="hero-titular">
-          <h1 class="subRayar titular">Adentrate a la aventura!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium earum facilis nostrum aut, officiis corporis rerum
-            deserunt sed doloremque repudiandae, tenetur enim. Amet voluptas
-            eaque officiis laborum, id, odio repudiandae quis ut facere
-            voluptates quam quod eum rerum in molestias possimus quisquam nobis
-            natus vero illum aliquid. Possimus quas perspiciatis ut modi
-            eligendi, expedita laborum quo officia neque odio dolore esse
-            laudantium recusandae porro soluta alias! Cum, quod libero,
-            necessitatibus magnam error, repellat architecto distinctio quasi
-            magni sit unde! Ducimus excepturi magnam porro. Dolore, laboriosam
-            commodi mollitia assumenda repudiandae porro aliquid voluptate
-            temporibus eaque quia numquam nemo reprehenderit sint consequuntur.
-          </p>
-        </section>
-        <section>
-          <img src="assets/img/fondo_DnD.jpg" alt="imgRef" class="dados-img" />
-        </section>
       </div>
+    </nav>
+  </header>
 
-      <section class="padingbody">
-        <p>Indice:</p>
-        <ul class="subRayar">
-          <li><a href="#jugar">¿Como jugar?</a></li>
-          <li><a href="#campaña">¿Que es una campaña?</a></li>
-          <li><a href="#personaje">¿Como armo un personaje?</a></li>
-        </ul>
+  <!-- ======================================================= -->
+
+  <!--Main-->
+  <main>
+    <div class="hero">
+      <!--seccion inicial del home-->
+      <section class="hero-titular">
+        <h1 class="subRayar titular">Adentrate a la aventura!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Praesentium earum facilis nostrum aut, officiis corporis rerum
+          deserunt sed doloremque repudiandae, tenetur enim. Amet voluptas
+          eaque officiis laborum, id, odio repudiandae quis ut facere
+          voluptates quam quod eum rerum in molestias possimus quisquam nobis
+          natus vero illum aliquid. Possimus quas perspiciatis ut modi
+          eligendi, expedita laborum quo officia neque odio dolore esse
+          laudantium recusandae porro soluta alias! Cum, quod libero,
+          necessitatibus magnam error, repellat architecto distinctio quasi
+          magni sit unde! Ducimus excepturi magnam porro. Dolore, laboriosam
+          commodi mollitia assumenda repudiandae porro aliquid voluptate
+          temporibus eaque quia numquam nemo reprehenderit sint consequuntur.
+        </p>
+      </section>
+      <section>
+        <img src="assets/img/fondo_DnD.jpg" alt="imgRef" class="dados-img" />
+      </section>
+    </div>
+
+    <section class="padingbody">
+      <p>Indice:</p>
+      <ul class="subRayar">
+        <li><a href="#jugar">¿Como jugar?</a></li>
+        <li><a href="#campaña">¿Que es una campaña?</a></li>
+        <li><a href="#personaje">¿Como armo un personaje?</a></li>
+      </ul>
+    </section>
+
+    <section class="informacionGeneral">
+      <section id="jugar" class="colorIntermedio">
+        <h2>¿Como jugar?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque
+          distinctio sunt sint repellat, perferendis natus id odit magnam
+          harum aperiam tempora. Laudantium blanditiis, necessitatibus
+          quisquam consectetur, eos minus impedit odit, quia cupiditate error
+          vel qui vitae dolorum libero. Sed in dignissimos provident libero
+          cupiditate ea, aperiam iste sit vero dolorum necessitatibus
+          reprehenderit nulla repellendus numquam fuga voluptatibus obcaecati
+          labore aliquam nostrum iure excepturi autem officia? Quidem aliquam
+          fugiat, ea earum sapiente, quia sed libero obcaecati accusantium
+          dolore, voluptates quaerat officiis repudiandae necessitatibus
+          tempora consequuntur unde! Odit repudiandae reprehenderit doloribus
+          distinctio! Quam recusandae officiis ipsa perferendis magni, sunt
+          voluptatibus asperiores.
+        </p>
       </section>
 
-      <section class="informacionGeneral">
-        <section id="jugar" class="colorIntermedio">
-          <h2>¿Como jugar?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque
-            distinctio sunt sint repellat, perferendis natus id odit magnam
-            harum aperiam tempora. Laudantium blanditiis, necessitatibus
-            quisquam consectetur, eos minus impedit odit, quia cupiditate error
-            vel qui vitae dolorum libero. Sed in dignissimos provident libero
-            cupiditate ea, aperiam iste sit vero dolorum necessitatibus
-            reprehenderit nulla repellendus numquam fuga voluptatibus obcaecati
-            labore aliquam nostrum iure excepturi autem officia? Quidem aliquam
-            fugiat, ea earum sapiente, quia sed libero obcaecati accusantium
-            dolore, voluptates quaerat officiis repudiandae necessitatibus
-            tempora consequuntur unde! Odit repudiandae reprehenderit doloribus
-            distinctio! Quam recusandae officiis ipsa perferendis magni, sunt
-            voluptatibus asperiores.
-          </p>
-        </section>
-
-        <section id="campaña" class="padingbody">
-          <h2>¿Que es una campaña?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum fugit
-            excepturi vitae odio magnam illum totam obcaecati, necessitatibus,
-            beatae vero minus debitis maxime eveniet voluptate nulla dolores.
-            Molestiae nisi quia atque. Neque fuga aliquam exercitationem omnis
-            consequatur, possimus, nobis eligendi accusantium reprehenderit,
-            explicabo debitis. Laborum quis quaerat perspiciatis. Laboriosam,
-            atque consequuntur! Et perferendis voluptatum dignissimos asperiores
-            quaerat illo ipsa eius! Culpa laborum minus perspiciatis. Illum,
-            unde debitis ea asperiores animi quidem quod esse commodi iure a,
-            mollitia hic nam odio amet placeat quo corporis minus qui dolore.
-            Voluptas nisi cumque quaerat deleniti rerum ipsam, animi labore
-            aliquam ad earum exercitationem.
-          </p>
-        </section>
-
-        <section id="personaje" class="colorIntermedio">
-          <h2>¿Como armo un personaje?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime a
-            cumque ut excepturi doloremque eius mollitia vitae praesentium,
-            nulla consequatur inventore unde similique dicta quasi voluptatem
-            nisi, explicabo dolores repudiandae adipisci eligendi quaerat
-            molestiae? A sed voluptate fugiat, iure consectetur cumque, quam
-            praesentium modi ratione ipsum architecto sequi laudantium. Mollitia
-            commodi exercitationem vitae, assumenda fugiat iure nulla maiores
-            dicta nemo earum maxime quas dolores quam recusandae ad officiis
-            eos, deleniti, expedita facere nesciunt minus. Nemo, nostrum illo
-            corrupti autem deleniti odio doloremque, dolore nisi optio ipsa
-            pariatur alias ea veritatis explicabo vel reprehenderit, rerum non!
-            Nulla corporis debitis dolorem rem.
-          </p>
-        </section>
+      <section id="campaña" class="padingbody">
+        <h2>¿Que es una campaña?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum fugit
+          excepturi vitae odio magnam illum totam obcaecati, necessitatibus,
+          beatae vero minus debitis maxime eveniet voluptate nulla dolores.
+          Molestiae nisi quia atque. Neque fuga aliquam exercitationem omnis
+          consequatur, possimus, nobis eligendi accusantium reprehenderit,
+          explicabo debitis. Laborum quis quaerat perspiciatis. Laboriosam,
+          atque consequuntur! Et perferendis voluptatum dignissimos asperiores
+          quaerat illo ipsa eius! Culpa laborum minus perspiciatis. Illum,
+          unde debitis ea asperiores animi quidem quod esse commodi iure a,
+          mollitia hic nam odio amet placeat quo corporis minus qui dolore.
+          Voluptas nisi cumque quaerat deleniti rerum ipsam, animi labore
+          aliquam ad earum exercitationem.
+        </p>
       </section>
 
-      <!-- ==javascript de Bootstrap== -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-    </main>
+      <section id="personaje" class="colorIntermedio">
+        <h2>¿Como armo un personaje?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime a
+          cumque ut excepturi doloremque eius mollitia vitae praesentium,
+          nulla consequatur inventore unde similique dicta quasi voluptatem
+          nisi, explicabo dolores repudiandae adipisci eligendi quaerat
+          molestiae? A sed voluptate fugiat, iure consectetur cumque, quam
+          praesentium modi ratione ipsum architecto sequi laudantium. Mollitia
+          commodi exercitationem vitae, assumenda fugiat iure nulla maiores
+          dicta nemo earum maxime quas dolores quam recusandae ad officiis
+          eos, deleniti, expedita facere nesciunt minus. Nemo, nostrum illo
+          corrupti autem deleniti odio doloremque, dolore nisi optio ipsa
+          pariatur alias ea veritatis explicabo vel reprehenderit, rerum non!
+          Nulla corporis debitis dolorem rem.
+        </p>
+      </section>
+    </section>
 
-    <!--pie de pagina-->
-    <footer>
-      <a href="#top">Ir hacia arriba</a>
-      <!--funciona para navegar internamente en la pagina-->
-      <em>
-        <h6>Comienza tu aventura!.</h6>
-        <h6>Sitio web sin fines de lucro.</h6>
-        <h6>Copyright?, no hay copy.</h6>
-      </em>
-    </footer>
-  </body>
-  <!--===========================================================-->
+    <!-- ==javascript de Bootstrap== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </main>
+
+  <!--pie de pagina-->
+  <footer>
+    <a href="#top">Ir hacia arriba</a>
+    <!--funciona para navegar internamente en la pagina-->
+    <em>
+      <h6>Comienza tu aventura!.</h6>
+      <h6>Sitio web sin fines de lucro.</h6>
+      <h6>Copyright?, no hay copy.</h6>
+    </em>
+  </footer>
+</body>
+<!--===========================================================-->
+
 </html>
