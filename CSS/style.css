@@ -155,6 +155,10 @@ main{
     padding: 10px;
 }
 
+.paginasLink div h2 button, .canalesLink div h2 button{
+    font-size: 1.6rem;
+}
+
 /* .padingbody a{
     color: black;
 }
