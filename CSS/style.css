@@ -5,7 +5,7 @@
     box-sizing: border-box;
  }
 
- 
+
 html{ /*etiqueta raiz para estabilizar tamaño*/
     font-size: 62.5%; /*Con esto ahora 10px=1rem*/
     font-family: 'Calibri','Times New Roman', Times, sans-serif;
@@ -54,7 +54,7 @@ h2{
 nav{
     min-height: 50px;
     max-height: 100%;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 nav a{
@@ -216,7 +216,7 @@ main{
 }
 
 /* ======extras para el main====== */
-.colorClaroLetra{ 
+.colorClaroLetra{
     color: beige;
 }
 
@@ -234,20 +234,44 @@ main{
     border-radius: 10px;
 }
 
-.cuestionario{
+
+/* ====Formulario Inicio==== */
+.cuestionario-dos{
     display: flex;
+    flex-direction: column;
     padding: 10px;
-    flex-flow:column;
     gap: 10px;
-    justify-content:start;
-    align-items:flex-start;
+    font-family: inherit;
+    font-size: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-button{
-    background-color:burlywood;
-    height: 40px;
-    width: 70px;
+.cuestionario-dos input, .cuestionario-dos textarea{
+    border-radius: 10px;
+    width: 100%;
 }
+
+.cuestionario-dos input:focus, .cuestionario-dos textarea:focus{
+    background-color: wheat;
+}
+
+.cuestionario-aux{
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.cuestionario-bg{
+    background-color: rgb(128, 128, 128, 0.5);
+}
+
+.cuestionario-dos-button{
+    width: 100%;
+}
+/* ====Formulario Fin==== */
+
 
 .titular{
     font-size: 3rem;
@@ -270,7 +294,7 @@ button{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
 
-    grid-template-areas: 
+    grid-template-areas:
     "caja1 caja2 caja9 caja12"
     "caja6 caja5 caja8 caja7"
     "caja3 caja10 caja11 caja4";
@@ -444,13 +468,13 @@ footer a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-    
-        grid-template-areas: 
+
+        grid-template-areas:
         "caja1 caja2"
         "caja3 caja4"
-        "caja5 caja6" 
+        "caja5 caja6"
         "caja7 caja8"
-        "caja9 caja10" 
+        "caja9 caja10"
         "caja11 caja12";
     }
 
@@ -474,7 +498,7 @@ footer a{
     }
 
 
-    
+
 }
 
 @media (max-width: 576px){
@@ -500,18 +524,18 @@ footer a{
     .box{
         display: grid;
         grid-template-columns:none ;
-        grid-template-areas: 
+        grid-template-areas:
         "caja1"
         "caja2"
-        "caja3" 
+        "caja3"
         "caja4"
-        "caja5" 
-        "caja6" 
-        "caja7" 
+        "caja5"
+        "caja6"
+        "caja7"
         "caja8"
-        "caja9" 
-        "caja10" 
-        "caja11" 
+        "caja9"
+        "caja10"
+        "caja11"
         "caja12";
     }
 }
