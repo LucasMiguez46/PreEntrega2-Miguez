@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+ html{
+    font-size: 62.5%; /*Con esto ahora 10px=1rem*/
+    font-family: 'Calibri','Times New Roman', Times, sans-serif;
+    scroll-behavior: smooth;
+    color: black;
+ }
+
+ .normalizar{ /*transforma el tamaño a uno perfectamente legible*/
+    font-size: 2rem; /*=16px*/
+    text-align: justify;
+}
+
+.body-color{/*cambia el color del fondo*/
+    background-color: rgb(241, 196, 111);
+}
+
+ul, ol, li, a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+}
+
+ul a, ol a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    text-align: start;
+}
+
+.subRayar{
+    text-decoration:underline;
+}
+
+.padingbody{
+    padding: 10px;
+}

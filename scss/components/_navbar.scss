@@ -1,0 +1,72 @@
+.header-color{
+    background-color: rgb(92, 57, 11);
+    color: black;
+}
+/* inicio de clases para navegador */
+nav{
+    min-height: 50px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+nav a{
+    color: black;
+    font-size: 1.6rem;
+}
+
+header div div div span{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,
+    rgb(175, 175, 175),transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+header div:hover span{
+    left: 100%;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img{
+    width:50px;
+    height:50px;
+    transition: 0.5s;
+}
+
+.logo-img:hover{
+    width:60px;
+    height:60px;
+}
+
+.logo-nombre{
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.logo-nombre:hover{
+    font-size: 2.5rem;
+}
+
+.selector{
+    transition: 0.5s;
+}
+
+.selector:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+}

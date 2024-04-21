@@ -1,0 +1,22 @@
+.conteiner{/*imagen de fondo para inicios del main*/
+    background-image: url(../assets/img/fondo_DnD2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.conteiner p{
+    padding: 10px;
+}
+
+.colorClaroLetra{
+    color: beige;
+}
+
+.colorIntermedio{ /*class para cambiar el color del fondo*/
+    background-color: rgb(177, 137, 63);
+    padding: 15px;
+}

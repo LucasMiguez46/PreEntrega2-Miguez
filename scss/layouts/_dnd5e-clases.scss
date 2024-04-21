@@ -1,0 +1,96 @@
+.galeria-clases{
+    padding: 20px;
+    background-color: tan;
+    text-align: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "caja1 caja2 caja9 caja12"
+    "caja6 caja5 caja8 caja7"
+    "caja3 caja10 caja11 caja4";
+
+    padding: 10px;
+    gap: 10px;
+}
+
+.box-item{
+    display: flex;
+    padding: 15px;
+    background-color: rgba(165, 42, 42, 0.226);
+    box-shadow: 5px 5px 5px rgb(144, 134, 112);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+    font-size: 2rem;
+}
+
+.box-item img{
+    width: 100%;
+}
+
+.c1{
+    grid-area: caja1;
+}
+
+.c2{
+    grid-area: caja2;
+}
+
+.c3{
+    grid-area: caja3;
+}
+
+.c4{
+    grid-area: caja4;
+}
+
+.c5{
+    grid-area: caja5;
+}
+
+.c6{
+    grid-area: caja6;
+}
+
+.c7{
+    grid-area: caja7;
+}
+
+.c8{
+    grid-area: caja8;
+}
+
+.c9{
+    grid-area: caja9;
+}
+
+.c10{
+    grid-area: caja10;
+}
+
+.c11{
+    grid-area: caja11;
+}
+
+.c11 img{
+    height: 100%;
+}
+
+.c12{
+    grid-area: caja12;
+}
+
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12{
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+}
