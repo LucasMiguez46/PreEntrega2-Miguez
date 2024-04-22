@@ -54,7 +54,6 @@ h2 {
   overflow: hidden;
   padding-top: 10px;
 }
-
 .conteiner p {
   padding: 10px;
 }
@@ -74,7 +73,6 @@ footer { /*cambia el color del fondo*/
   color: rgb(0, 0, 0);
   text-align: center;
 }
-
 footer a {
   color: black;
   text-decoration: none;
@@ -91,7 +89,6 @@ nav {
   max-height: 100%;
   max-width: 100%;
 }
-
 nav a {
   color: black;
   font-size: 1.6rem;
@@ -129,7 +126,6 @@ header div:hover span {
   height: 50px;
   transition: 0.5s;
 }
-
 .logo-img:hover {
   width: 60px;
   height: 60px;
@@ -139,7 +135,6 @@ header div:hover span {
   font-size: 2rem;
   transition: 0.5s;
 }
-
 .logo-nombre:hover {
   font-size: 2.5rem;
 }
@@ -147,7 +142,6 @@ header div:hover span {
 .selector {
   transition: 0.5s;
 }
-
 .selector:hover {
   background-color: aliceblue;
   border-radius: 10px;
@@ -182,7 +176,6 @@ header div:hover span {
   width: 60px;
   transition: 1.5s;
 }
-
 .logo-dimension:hover {
   transform: rotate(360deg);
 }
@@ -198,12 +191,10 @@ header div:hover span {
   justify-content: center;
   width: 100%;
 }
-
 .cuestionario-dos input, .cuestionario-dos textarea {
   border-radius: 10px;
   width: 100%;
 }
-
 .cuestionario-dos input:focus, .cuestionario-dos textarea:focus {
   background-color: wheat;
 }
@@ -249,7 +240,6 @@ header div:hover span {
   max-height: 100%;
   font-size: 2rem;
 }
-
 .box-item img {
   width: 100%;
 }
@@ -331,11 +321,9 @@ header div:hover span {
   justify-content: space-between;
   background-color: bisque;
 }
-
 .informacionRazas-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
-
 .informacionRazas-card img {
   width: 200px;
   height: 400px;
@@ -353,15 +341,14 @@ header div:hover span {
   text-align: justify;
   gap: 2%;
 }
+.hero h1 {
+  text-align: start;
+  color: black;
+}
 
 .hero-titular {
   height: 50%;
   width: 50%;
-}
-
-.hero h1 {
-  text-align: start;
-  color: black;
 }
 
 .dados-img {
@@ -372,7 +359,6 @@ header div:hover span {
   box-shadow: 5px 5px 5px black;
   transition: 2s;
 }
-
 .dados-img:hover {
   transform: rotate(360deg);
 }

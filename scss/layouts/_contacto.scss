@@ -24,11 +24,13 @@
     height: 60px;
     width: 60px;
     transition: 1.5s;
+
+    &:hover{
+        transform: rotate(360deg);
+    }
 }
 
-.logo-dimension:hover{
-    transform: rotate(360deg);
-}
+
 
 .cuestionario-dos{
     display: flex;
@@ -40,15 +42,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-}
 
-.cuestionario-dos input, .cuestionario-dos textarea{
-    border-radius: 10px;
-    width: 100%;
-}
+    input, textarea{
+        border-radius: 10px;
+        width: 100%;
+    }
 
-.cuestionario-dos input:focus, .cuestionario-dos textarea:focus{
-    background-color: wheat;
+    input:focus, textarea:focus{
+        background-color: wheat;
+    }
 }
 
 .cuestionario-aux{
