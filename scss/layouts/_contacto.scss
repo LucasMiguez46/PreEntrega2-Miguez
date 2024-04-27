@@ -5,7 +5,7 @@
     text-align: justify;
 
     a{
-        color: black;
+        color: $dark;
     }
 }
 
@@ -16,7 +16,7 @@
     text-align: justify;
 
     a{
-        color: black;
+        color: $dark;
     }
 }
 
@@ -49,7 +49,7 @@
     }
 
     input:focus, textarea:focus{
-        background-color: wheat;
+        background-color: $focus-form;
     }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .cuestionario-bg{
-    background-color: rgb(128, 128, 128, 0.5);
+    background-color: $fondo-color-form
 }
 
 .cuestionario-dos-button{

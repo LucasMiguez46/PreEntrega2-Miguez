@@ -1,6 +1,6 @@
 .galeria-clases{
     padding: 20px;
-    background-color: tan;
+    background-color: $color-galery;
     text-align: center;
 }
 
@@ -21,8 +21,8 @@
 .box-item{
     display: flex;
     padding: 15px;
-    background-color: rgba(165, 42, 42, 0.226);
-    box-shadow: 5px 5px 5px rgb(144, 134, 112);
+    background-color: $color-card-clases;
+    box-shadow: 5px 5px 5px $sombra-card;
     justify-content: center;
     align-items: center;
     width: 100%;

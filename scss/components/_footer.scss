@@ -1,11 +1,30 @@
 footer{ /*cambia el color del fondo*/
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    background-color: rgb(126, 85, 32);
-    color: rgb(0, 0, 0);
+    color: $dark;
     text-align: center;
+    justify-content:center;
 
     a{
-        color: black;
+        color: $dark;
         text-decoration: none;
     }
+}
+
+.pie-de-pagina{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

@@ -1,6 +1,6 @@
 .informacionRazas{
     width: 100%;
-    background-color: rgb(177, 137, 63);
+    // background-color: rgb(177, 137, 63);
     padding: 10px;
     gap: 10px;
     display: grid;
@@ -13,7 +13,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: $color-card-razas;
 
     &:nth-child(odd){
         flex-direction: row-reverse;
@@ -23,6 +23,6 @@
         width: 200px;
         height: 400px;
         border-radius: 15px;
-        border: 2px solid black;
+        border: 2px solid $dark;
     }
 }

@@ -17,10 +17,6 @@ html {
   text-align: justify;
 }
 
-.body-color { /*cambia el color del fondo*/
-  background-color: rgb(241, 196, 111);
-}
-
 ul, ol, li, a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -59,28 +55,37 @@ h2 {
 }
 
 .colorClaroLetra {
-  color: beige;
-}
-
-.colorIntermedio { /*class para cambiar el color del fondo*/
-  background-color: rgb(177, 137, 63);
-  padding: 15px;
+  color: rgb(245, 245, 220);
 }
 
 footer { /*cambia el color del fondo*/
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  background-color: rgb(126, 85, 32);
   color: rgb(0, 0, 0);
   text-align: center;
+  justify-content: center;
 }
 footer a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
-.header-color {
-  background-color: rgb(92, 57, 11);
-  color: black;
+.pie-de-pagina {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 /* inicio de clases para navegador */
@@ -90,7 +95,7 @@ nav {
   max-width: 100%;
 }
 nav a {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.6rem;
 }
 
@@ -158,7 +163,7 @@ header div:hover span {
   text-align: justify;
 }
 .redes-personales a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .discord-comunidad {
@@ -168,7 +173,7 @@ header div:hover span {
   text-align: justify;
 }
 .discord-comunidad a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .logo-dimension {
@@ -231,7 +236,7 @@ header div:hover span {
 .box-item {
   display: flex;
   padding: 15px;
-  background-color: rgba(165, 42, 42, 0.226);
+  background-color: rgba(165, 42, 42, 0.25);
   box-shadow: 5px 5px 5px rgb(144, 134, 112);
   justify-content: center;
   align-items: center;
@@ -306,7 +311,6 @@ header div:hover span {
 
 .informacionRazas {
   width: 100%;
-  background-color: rgb(177, 137, 63);
   padding: 10px;
   gap: 10px;
   display: grid;
@@ -328,7 +332,7 @@ header div:hover span {
   width: 200px;
   height: 400px;
   border-radius: 15px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .hero {
@@ -343,7 +347,7 @@ header div:hover span {
 }
 .hero h1 {
   text-align: start;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .hero-titular {
@@ -354,13 +358,29 @@ header div:hover span {
 .dados-img {
   height: 350px;
   width: 350px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 15px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
   transition: 2s;
 }
 .dados-img:hover {
   transform: rotate(360deg);
+}
+
+.bc-primary {
+  background-color: rgb(126, 85, 32);
+}
+
+.bc-secundary {
+  background-color: rgb(241, 196, 111);
+}
+
+.bc-terciary {
+  background-color: rgb(92, 57, 11);
+}
+
+.bc-intermedio {
+  background-color: rgb(177, 137, 63);
 }
 
 @media (max-width: 992px) {

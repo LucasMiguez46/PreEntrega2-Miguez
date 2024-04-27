@@ -1,7 +1,7 @@
-.header-color{
-    background-color: rgb(92, 57, 11);
-    color: black;
-}
+// .header-color{
+//     background-color: rgb(92, 57, 11);
+//     color: black;
+// }
 /* inicio de clases para navegador */
 nav{
     min-height: 50px;
@@ -9,7 +9,7 @@ nav{
     max-width: 100%;
 
     a{
-        color: black;
+        color: $dark;
         font-size: 1.6rem;
     }
 }
@@ -66,7 +66,7 @@ header div div div span{
     transition: 0.5s;
 
     &:hover{
-        background-color: aliceblue;
+        background-color: $hover-color-select;
         border-radius: 10px;
     }
 }
