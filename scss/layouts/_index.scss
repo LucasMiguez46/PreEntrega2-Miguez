@@ -1,7 +1,7 @@
 .hero{
     display: flex;
     padding: 10px;
-    background: linear-gradient(rgba(126, 85, 32, 0.973), rgb(241, 196, 111));
+    background: linear-gradient($primary-opacity, $secundary-opacity);
     /* background-color: rgba(126, 85, 32, 0.185); */
     justify-content: center;
     align-items:center;
