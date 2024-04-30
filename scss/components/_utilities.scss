@@ -1,0 +1,12 @@
+@mixin flexin($justyc, $aligni, $gapx){
+    display: flex;
+    justify-content: $justyc;
+    align-items: $aligni;
+    gap: $gapx;
+}
+
+@mixin no-gap-flexin($justyc, $aligni){
+    display: flex;
+    justify-content: $justyc;
+    align-items: $aligni;
+}

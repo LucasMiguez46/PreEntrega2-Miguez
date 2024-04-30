@@ -187,13 +187,14 @@ header div:hover span {
 
 .cuestionario-dos {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
   font-family: inherit;
   font-size: 100%;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .cuestionario-dos input, .cuestionario-dos textarea {
@@ -235,11 +236,11 @@ header div:hover span {
 
 .box-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   background-color: rgba(165, 42, 42, 0.25);
   box-shadow: 5px 5px 5px rgb(144, 134, 112);
-  justify-content: center;
-  align-items: center;
   width: 100%;
   min-height: 400px;
   max-height: 100%;
@@ -319,10 +320,10 @@ header div:hover span {
 
 .informacionRazas-card {
   display: flex;
-  padding: 10px;
-  gap: 10px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
   background-color: bisque;
 }
 .informacionRazas-card:nth-child(odd) {
@@ -337,12 +338,12 @@ header div:hover span {
 
 .hero {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
   background: linear-gradient(rgba(126, 85, 32, 0.9), rgb(241, 196, 111));
   /* background-color: rgba(126, 85, 32, 0.185); */
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
   gap: 2%;
 }
 .hero h1 {

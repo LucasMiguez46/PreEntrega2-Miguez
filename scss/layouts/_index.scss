@@ -1,11 +1,8 @@
 .hero{
-    display: flex;
+    @include flexin(center, center, 10px);
     padding: 10px;
     background: linear-gradient($primary-opacity, $secundary-opacity);
     /* background-color: rgba(126, 85, 32, 0.185); */
-    justify-content: center;
-    align-items:center;
-    text-align: justify;
     gap: 2%;
     
     h1{

@@ -19,12 +19,13 @@
 }
 
 .box-item{
-    display: flex;
+    @include no-gap-flexin(center, center);
+    // display: flex;
     padding: 15px;
     background-color: $color-card-clases;
     box-shadow: 5px 5px 5px $sombra-card;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
     width: 100%;
     min-height: 400px;
     max-height: 100%;
