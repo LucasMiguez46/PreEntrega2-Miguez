@@ -1,12 +1,13 @@
 //====Base====//
 @import 'base/reset';
+@import 'base/utilities';
 @import 'base/vars';
 
 //====Components====//
 @import 'components/fondo';
 @import 'components/footer';
 @import 'components/navbar';
-@import 'components/utilities';
+
 
 //====Layouts====//
 @import 'layouts/bibliografia';

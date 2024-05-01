@@ -72,19 +72,19 @@ footer a {
 }
 
 .pie-de-pagina {
-  font-size: 16px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  font-size: 16px;
+  flex-direction: row;
   padding: 10px;
 }
 
 .logo-footer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -239,7 +239,7 @@ header div:hover span {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: rgba(165, 42, 42, 0.25);
+  background-color: rgba(165, 42, 42, 0.3);
   box-shadow: 5px 5px 5px rgb(144, 134, 112);
   width: 100%;
   min-height: 400px;
@@ -342,13 +342,25 @@ header div:hover span {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  background: linear-gradient(rgba(126, 85, 32, 0.9), rgb(241, 196, 111));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../assets/img/dm.jpg);
   /* background-color: rgba(126, 85, 32, 0.185); */
   gap: 2%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .hero h1 {
   text-align: start;
-  color: rgb(0, 0, 0);
+  color: transparent;
+  font-size: 6rem;
+  background-image: url(../../assets/img/dm.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-clip: text;
+  background-attachment: fixed;
+  transition: 0.5s;
+}
+.hero h1:hover {
+  transform: scale(1.2);
 }
 
 .hero-titular {

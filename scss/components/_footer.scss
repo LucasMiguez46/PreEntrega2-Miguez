@@ -13,18 +13,16 @@ footer{ /*cambia el color del fondo*/
 }
 
 .pie-de-pagina{
+    @include flexin(center, center, 20px);
     font-size: 16px;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
     padding: 10px;
 }
 
 .logo-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    @include flexin(center, center, 10px);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 10px;
 }

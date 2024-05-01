@@ -1,13 +1,27 @@
 .hero{
     @include flexin(center, center, 10px);
     padding: 10px;
-    background: linear-gradient($primary-opacity, $secundary-opacity);
+    background: linear-gradient(145deg,$color-white-opacity, $color-white-opacity), url(../../assets/img/dm.jpg);
     /* background-color: rgba(126, 85, 32, 0.185); */
     gap: 2%;
+    background-size: cover;
+    background-attachment: fixed;
     
     h1{
         text-align: start;
-        color: $dark;
+        color: transparent;
+        font-size: 6rem;
+        // background: linear-gradient(45deg, rgb(50, 26, 184), rgb(206, 57, 154));
+        background-image: url(../../assets/img/dm.jpg);
+        background-position: top center;
+        background-size: cover;
+        background-clip: text;
+        background-attachment: fixed;
+        transition: 0.5s;
+    
+         &:hover {
+            transform: scale(1.2);
+        }
     }
 
 }
