@@ -21,8 +21,4 @@ footer{ /*cambia el color del fondo*/
 
 .logo-footer{
     @include flexin(center, center, 10px);
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 10px;
 }

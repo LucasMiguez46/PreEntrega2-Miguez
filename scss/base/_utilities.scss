@@ -10,3 +10,10 @@
     justify-content: $justyc;
     align-items: $aligni;
 }
+
+@mixin flexinvdos($flexd, $aligni, $texta){
+    display: flex;
+    flex-direction: $flexd;
+    align-items: $aligni;
+    text-align: $texta;
+}

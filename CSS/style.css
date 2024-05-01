@@ -88,7 +88,6 @@ footer a {
   gap: 10px;
 }
 
-/* inicio de clases para navegador */
 nav {
   min-height: 50px;
   max-height: 100%;
@@ -190,7 +189,6 @@ header div:hover span {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  display: flex;
   flex-direction: column;
   padding: 10px;
   font-family: inherit;
@@ -343,7 +341,6 @@ header div:hover span {
   gap: 10px;
   padding: 10px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../assets/img/dm.jpg);
-  /* background-color: rgba(126, 85, 32, 0.185); */
   gap: 2%;
   background-size: cover;
   background-attachment: fixed;
