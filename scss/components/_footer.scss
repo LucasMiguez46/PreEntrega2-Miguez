@@ -2,12 +2,11 @@ footer{ /*cambia el color del fondo*/
     display: flex;
     flex-direction: column;
     padding: 10px;
-    color: $dark;
     text-align: center;
     justify-content:center;
 
     a{
-        color: $dark;
+        color: $color-claro;
         text-decoration: none;
     }
 }
