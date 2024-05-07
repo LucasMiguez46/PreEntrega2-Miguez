@@ -56,6 +56,52 @@ h2 {
   font-size: 2.6rem;
 }
 
+.contenedor-acordeon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.contenedor-acordeon h2 {
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.acordeon {
+  max-width: 800px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.acordeon label {
+  display: block;
+  padding: 20px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: all 300ms ease;
+}
+.acordeon label:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.acordeon .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon {
+  display: none;
+}
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 800px;
+  padding: 15px 0px;
+}
+
 .conteiner { /*imagen de fondo para inicios del main*/
   background-image: url(../assets/img/fondo_DnD2.jpg);
   background-repeat: no-repeat;
@@ -436,6 +482,9 @@ header div:hover span {
   header div div div span {
     display: none;
   }
+  .acordeon {
+    max-width: 90%;
+  }
 }
 @media (max-width: 576px) {
   .hero {
@@ -454,6 +503,9 @@ header div:hover span {
     display: grid;
     grid-template-columns: none;
     grid-template-areas: "caja1" "caja2" "caja3" "caja4" "caja5" "caja6" "caja7" "caja8" "caja9" "caja10" "caja11" "caja12";
+  }
+  .acordeon {
+    max-width: 100%;
   }
 }
 

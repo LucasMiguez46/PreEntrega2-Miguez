@@ -42,7 +42,9 @@
         display: none;
     }
 
-
+    .acordeon{
+        max-width: 90%;
+    }
 
 }
 
@@ -78,5 +80,9 @@
         "caja10"
         "caja11"
         "caja12";
+    }
+
+    .acordeon{
+        max-width: 100%;
     }
 }

@@ -1,0 +1,50 @@
+.contenedor-acordeon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.6rem;
+    // max-width: 800px;
+    
+    // margin: auto;
+    // margin-top: 80px;
+    h2{
+        text-align: start;
+        margin-bottom: 15px;
+    }
+}
+
+.acordeon{
+    max-width: 800px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    label{
+        display: block;
+        padding: 20px;
+        border-radius: 20px;
+        color: $white;
+        cursor: pointer;
+        margin-bottom: 0px;
+        transition: all 300ms ease;
+        
+        &:hover{
+            background: $color-dark-opacity;
+        }
+    }
+}
+
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon{
+    display: none;
+    &:checked ~ .contenido-acordeon{
+        max-height: 800px;
+        padding: 15px 0px;
+    }
+}
