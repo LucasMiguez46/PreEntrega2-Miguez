@@ -55,3 +55,30 @@
 .cuestionario-dos-button{
     width: 100%;
 }
+
+.boton-animado{
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.boton-animado:after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+    transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+
+.boton-animado:hover::after {
+	transform: scale(400);
+	background: $secundary-opacity;
+}

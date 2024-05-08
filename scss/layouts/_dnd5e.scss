@@ -1,0 +1,19 @@
+.recuadro-animado a{
+    transition: .5s;
+
+    &:hover{
+        background-color: $secundary-opacity;
+        padding: 5px;
+        border: 2px solid $dark;
+    }
+}
+
+.recuadro-animadov2 a{
+    transition: .5s;
+
+    &:hover{
+        background-color: $primary-opacity;
+        padding: 5px;
+        border: 2px solid $dark;
+    }
+}

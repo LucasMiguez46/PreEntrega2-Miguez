@@ -7,18 +7,18 @@
     background-attachment: fixed;
     
     h1{
-        text-align: start;
+        text-align: center;
         color: transparent;
-        font-size: 6rem;
+        font-size: 5.4rem;
         background-image: url(../assets/img/dm.jpg);
         background-position: top center;
         background-size: cover;
         background-clip: text;
         background-attachment: fixed;
-        transition: 0.5s;
+        transition: 0.7s;
     
          &:hover {
-            transform: scale(1.2);
+            font-size: 5.9rem;
         }
     }
 

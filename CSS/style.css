@@ -53,7 +53,7 @@ h2 {
   transition: 0.5s;
 }
 .agrandar:hover {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 .contenedor-acordeon {
@@ -64,8 +64,9 @@ h2 {
   font-size: 1.6rem;
 }
 .contenedor-acordeon h2 {
+  color: rgb(255, 255, 255);
   text-align: start;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .acordeon {
@@ -277,6 +278,33 @@ header div:hover span {
   width: 100%;
 }
 
+.boton-animado {
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.boton-animado:after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transition: 0.3s ease-in-out all;
+  border-radius: 100px;
+  transform-origin: center;
+}
+
+.boton-animado:hover::after {
+  transform: scale(400);
+  background: rgb(241, 196, 111);
+}
+
 .galeria-clases {
   padding: 20px;
   background-color: tan;
@@ -394,6 +422,24 @@ header div:hover span {
   border: 2px solid rgb(0, 0, 0);
 }
 
+.recuadro-animado a {
+  transition: 0.5s;
+}
+.recuadro-animado a:hover {
+  background-color: rgb(241, 196, 111);
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.recuadro-animadov2 a {
+  transition: 0.5s;
+}
+.recuadro-animadov2 a:hover {
+  background-color: rgba(126, 85, 32, 0.3);
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -406,18 +452,18 @@ header div:hover span {
   background-attachment: fixed;
 }
 .hero h1 {
-  text-align: start;
+  text-align: center;
   color: transparent;
-  font-size: 6rem;
+  font-size: 5.4rem;
   background-image: url(../assets/img/dm.jpg);
   background-position: top center;
   background-size: cover;
   background-clip: text;
   background-attachment: fixed;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .hero h1:hover {
-  transform: scale(1.2);
+  font-size: 5.9rem;
 }
 
 .hero-titular {
