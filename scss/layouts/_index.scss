@@ -42,6 +42,63 @@
     }
 }
 
+.div-btn-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.div-btn-arriba a{
+    display: inline-block;
+    align-items: center;
+    justify-content: end;
+    background-color: $dark;
+    color: $secundary-opacity;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation-name: salto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 0s;
+
+    // &:hover{
+    //     transform: translateY(-4px) ;
+    // }
+}
+
+@keyframes salto{
+
+    0%{
+        transform: translateY(0px) ;
+    }
+
+    20%{
+        transform: translateY(-2px) ;
+    }
+
+    40%{
+        transform: translateY(-4px) ;
+    }
+
+    60%{
+        transform: translateY(-8px) ; 
+    }
+
+    80%{
+        transform: translateY(-4px) ;
+    }
+
+    90%{
+        transform: translateY(-2px) ;
+    }
+
+    100%{
+        transform: translateY(0px) ;
+    }
+}
+
 //each
 @each $key, $valor in $colores{
     .bc-#{$key}{
