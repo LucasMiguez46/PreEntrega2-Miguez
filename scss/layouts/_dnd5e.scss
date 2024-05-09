@@ -10,6 +10,7 @@
 
 .recuadro-animadov2 a{
     transition: .5s;
+    color: $white;
 
     &:hover{
         background-color: $primary-opacity;
